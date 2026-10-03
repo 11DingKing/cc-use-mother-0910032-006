@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "交易订单担保风控",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "企业申报员",
+    "核算专员",
+    "交易运营员",
+    "监管审计员"
+  ],
+  "states": [
+    "草稿",
+    "待核算",
+    "已确认",
+    "执行中",
+    "已封存"
+  ],
+  "invariants": [
+    "担保批次余额",
+    "订单敞口计算",
+    "交割释放分录",
+    "风险拒绝解释"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910032-006-A",
+      "actor": "企业申报员",
+      "state": "草稿"
+    },
+    {
+      "case_id": "0910032-006-B",
+      "actor": "监管审计员",
+      "state": "待核算"
+    }
+  ],
+  "tags": [
+    "trade-collateral",
+    "exposure-control"
+  ]
+}
