@@ -1,6 +1,6 @@
 [project]
 name = "domain-contract-0910032-006"
-version = "0.1.0"
-description = "交易订单担保风控的领域约定与校验工具"
+version = "0.2.0"
+description = "交易订单担保风控的领域约定、校验工具与担保风控服务端"
 requires-python = ">=3.11"
 dependencies = []
