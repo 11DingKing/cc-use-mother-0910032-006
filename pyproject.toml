@@ -1,6 +1,16 @@
 [project]
 name = "domain-contract-0910032-006"
-version = "0.1.0"
-description = "交易订单担保风控的领域约定与校验工具"
+version = "0.2.0"
+description = "交易订单担保风控：不可变分录账本、担保冻结/释放与风控规则服务端"
 requires-python = ">=3.11"
 dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
